@@ -9,9 +9,9 @@ I build data pipelines in Python and PostgreSQL, and I run what I build myself: 
 #### Projects here
 
 - [**Wiener Netze Smart Meter Integration**](https://github.com/KrOnAsK/Wiener-Netze-Smart-Meter-Integration): Home Assistant integration for Wiener Netze smart meters. Hourly energy statistics, per-hour cost tracking for dynamic tariffs, full history import. Installable through HACS.
-- [**Zeche**](https://github.com/KrOnAsK/zeche): self-hosted bill splitting. Photograph the receipt, Tesseract reads the line items, everyone taps what they had via a QR code. FastAPI, SQLite, Docker.
+- [**Zeche**](https://github.com/KrOnAsK/billsplitting): self-hosted bill splitting. Photograph the receipt, Tesseract reads the line items, everyone taps what they had via a QR code. FastAPI, SQLite, Docker.
 - [**Narrative classification in online news**](https://github.com/KrOnAsK/nlp_Backpropagandists_2024): SVM vs. BERT vs. LLaMA for detecting narratives in multilingual news on the Ukraine war and climate change. TU Wien group project.
-- [**Climate & agriculture dashboard**](https://github.com/KrOnAsK/visualdatascience26): interactive dashboard of global agriculture data and climate patterns.
+- [**Climate & agriculture dashboard**](https://github.com/KrOnAsK/visualdatascience26): interactive Vega-Lite dashboard of crop yields and climate patterns ([live demo](https://kronask.github.io/visualdatascience26/)).
 
 **Stack:** Python · SQL / PostgreSQL · FastAPI · Docker · Kubernetes · GitLab CI · Proxmox · LLM pipelines
 
