@@ -6,13 +6,14 @@ I build data pipelines in Python and PostgreSQL, and I run what I build myself: 
 
 #### Main project: Biografiemaschine
 
-A research tool I'm building at TU Wien's recsys-lab for the [Wienbibliothek im Rathaus](https://www.wienbibliothek.at/). An LLM pipeline turns the library's source material into structured biographies, which librarians review, correct and export to Word.
+A research tool I'm building at TU Wien's recsys-lab for the [Wienbibliothek im Rathaus](https://www.wienbibliothek.at/). Librarians enter a historical person; an agent pipeline researches them and returns dated facts with sources and confidence scores, which the librarians then verify or correct.
 
-- Built the extraction pipeline, the PostgreSQL data model and the full-stack app (FastAPI, React/Vite)
+- Pipeline with Pydantic AI agents: query planning, source gathering from the web and archive databases, structured fact extraction, topic clustering, optional reflection loop for gaps
+- FastAPI + async SQLAlchemy + PostgreSQL backend, React/TypeScript frontend, Langfuse tracing on every LLM call
 - Deployed with GitLab CI/CD (Kaniko builds on Kubernetes) behind nginx with TLS
 - Ran user tests with Wienbibliothek librarians and fed the findings back into the product, e.g. telling apart people with the same name and showing the model's confidence
 
-The code lives on the university's GitLab, so it isn't public. Happy to walk through it or show a demo.
+The repository is private for now. Happy to walk through it or show a demo.
 
 #### Projects here
 
