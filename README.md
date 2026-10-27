@@ -4,7 +4,15 @@ Data Science master's student at [TU Wien](https://www.tuwien.at/) (graduating F
 
 I build data pipelines in Python and PostgreSQL, and I run what I build myself: CI/CD, containers, reverse proxies, a two-node Proxmox homelab.
 
-**Right now** I'm building an LLM pipeline that turns source material from the Wienbibliothek im Rathaus into structured biographies (FastAPI, React, PostgreSQL, GitLab CI on Kubernetes).
+#### Main project: Biografiemaschine
+
+A research tool I'm building at TU Wien's recsys-lab for the [Wienbibliothek im Rathaus](https://www.wienbibliothek.at/). An LLM pipeline turns the library's source material into structured biographies, which librarians review, correct and export to Word.
+
+- Built the extraction pipeline, the PostgreSQL data model and the full-stack app (FastAPI, React/Vite)
+- Deployed with GitLab CI/CD (Kaniko builds on Kubernetes) behind nginx with TLS
+- Ran user tests with Wienbibliothek librarians and fed the findings back into the product, e.g. telling apart people with the same name and showing the model's confidence
+
+The code lives on the university's GitLab, so it isn't public. Happy to walk through it or show a demo.
 
 #### Projects here
 
